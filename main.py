@@ -4,7 +4,16 @@ from utils.controller import  get_user_info
 
 def main():
     print(f'witaj {users[0]['name']}')
-    get_user_info(users[1:])
+    while True:
+        print('==============MENU===============')
+        print('0 - Zakoncz program')
+        print('1 - Wyswietl znajomych')
+        print('2 - Dodaj znajomego')
+        print('=================================')
+
+        choice=input('wybierz opcje menu')
+        if choice=='0': break
+        if choice=='1': get_user_info(users[1:])
 
 if __name__ == '__main__':
     main()
