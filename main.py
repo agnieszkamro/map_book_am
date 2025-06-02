@@ -25,12 +25,10 @@ def add_user() -> None:
     show_users()
 
 
-def show_users(): None
-
-
-listbox_lista_obiektow.delete(0, END)
-for user in enumerate(users):
-    listbox_lista_obiektow.insert(idx, END, f'{idx}. {user['name']}')
+def show_users() -> None:
+    listbox_lista_obiektow.delete(0, END)
+    for user in enumerate(users):
+        listbox_lista_obiektow.insert(idx, END, f'{idx}. {user['name']}')
 
 
 def remove_user() -> None:
